@@ -14,17 +14,21 @@ class ViewController: NSViewController, CardsUpdaterDelegate  {
     @IBOutlet weak var backgroundView: NSImageView!
     @IBOutlet weak var tableViewCards: NSTableView!
     
-   
+    
     
     @IBAction func costCheck(_ sender: NSButton) {
-       appController.filterCards(filterType:.cost, buttonState:sender.state.rawValue, checkTag:sender.tag)
+        
+        switchOpacity(sender:sender)
+        appController.filterCards(filterType:.cost, buttonState:sender.state.rawValue, checkTag:sender.tag)
     }
     @IBAction func  theClassCheck(_ sender: NSButton) {
-       appController.filterCards(filterType:.cardType, buttonState:sender.state.rawValue, checkTag:sender.tag)
+        switchOpacity(sender:sender)
+        appController.filterCards(filterType:.cardType, buttonState:sender.state.rawValue, checkTag:sender.tag)
         
     }
     @IBAction func avatarCheck(_ sender: NSButton) {
-       appController.filterCards(filterType:.hero, buttonState:sender.state.rawValue, checkTag:sender.tag)
+        switchOpacity(sender:sender)
+        appController.filterCards(filterType:.hero, buttonState:sender.state.rawValue, checkTag:sender.tag)
     }
     
     
@@ -39,7 +43,7 @@ class ViewController: NSViewController, CardsUpdaterDelegate  {
         viewConfiguration()
     }
     
-
+    
     override func viewDidAppear() {
         super.viewDidAppear()
         appController.cardsUpdaterDelegate = self
@@ -57,6 +61,23 @@ class ViewController: NSViewController, CardsUpdaterDelegate  {
             
         }
     }
+    
+    private func switchOpacity(sender:NSButton) {
+        
+        if sender.state.rawValue == 0 {
+            switchOpacityOff(button:sender)
+        }else {
+            switchOpacityOn(button:sender)
+        }
+    }
+    
+    private func switchOpacityOff(button:NSButton) {
+        button.layer?.opacity = 0.5
+    }
+    private func switchOpacityOn(button:NSButton) {
+        button.layer?.opacity = 1.0
+    }
+    
     
     
     //MARK: ------------- CardsUpdaterDelegate  -------------
