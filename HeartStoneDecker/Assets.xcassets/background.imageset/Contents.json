@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "idiom" : "universal",
+      "filename" : "tavern-brawl_wallpaper1920x1200-f80de5f56de2f47f8b28c390a90761e4118daaa1875022030d84f676f5a7dea97ba5897b74f3798a457b5f6991b4d3fe0e40bc58c7f5aa07a35faaef436990c9.jpg",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  }
+}

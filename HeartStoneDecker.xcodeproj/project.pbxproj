@@ -7,14 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6112C79D2056C73200F3BB93 /* DBCard+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6112C79720560E9500F3BB93 /* DBCard+CoreDataClass.swift */; };
+		6112C79E2056C73200F3BB93 /* DBCard+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6112C79820560E9500F3BB93 /* DBCard+CoreDataProperties.swift */; };
+		612836582057476300EAB311 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612836572057476300EAB311 /* Enums.swift */; };
+		616BA622205575EA00D1453E /* WebDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616BA621205575EA00D1453E /* WebDownloader.swift */; };
+		616BA6242055769800D1453E /* ImagesDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616BA6232055769800D1453E /* ImagesDownloader.swift */; };
+		616BA6262055774900D1453E /* htmlWebPraser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616BA6252055774900D1453E /* htmlWebPraser.swift */; };
+		616BA62820557A5B00D1453E /* CardObjectMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616BA62720557A5B00D1453E /* CardObjectMaker.swift */; };
 		616F33E0205466FF00C8A979 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616F33DF205466FF00C8A979 /* AppDelegate.swift */; };
 		616F33E2205466FF00C8A979 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616F33E1205466FF00C8A979 /* ViewController.swift */; };
 		616F33E5205466FF00C8A979 /* HeartStoneDecker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 616F33E3205466FF00C8A979 /* HeartStoneDecker.xcdatamodeld */; };
 		616F33E7205466FF00C8A979 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 616F33E6205466FF00C8A979 /* Assets.xcassets */; };
 		616F33EA205466FF00C8A979 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 616F33E8205466FF00C8A979 /* Main.storyboard */; };
+		616F33F320548A6600C8A979 /* AppController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616F33F220548A6600C8A979 /* AppController.swift */; };
+		616F33F520548A7600C8A979 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616F33F420548A7600C8A979 /* Extensions.swift */; };
+		616F33F72054C08C00C8A979 /* CardsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616F33F62054C08C00C8A979 /* CardsTableViewCell.swift */; };
+		618808CA2055F68100A926DD /* webDownloaderPage2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618808C92055F68100A926DD /* webDownloaderPage2.swift */; };
+		618808CC20560BB000A926DD /* DataBaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618808CB20560BB000A926DD /* DataBaseManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6112C79720560E9500F3BB93 /* DBCard+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DBCard+CoreDataClass.swift"; sourceTree = "<group>"; };
+		6112C79820560E9500F3BB93 /* DBCard+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DBCard+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		612836572057476300EAB311 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		616BA621205575EA00D1453E /* WebDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebDownloader.swift; sourceTree = "<group>"; };
+		616BA6232055769800D1453E /* ImagesDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesDownloader.swift; sourceTree = "<group>"; };
+		616BA6252055774900D1453E /* htmlWebPraser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = htmlWebPraser.swift; sourceTree = "<group>"; };
+		616BA62720557A5B00D1453E /* CardObjectMaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardObjectMaker.swift; sourceTree = "<group>"; };
 		616F33DC205466FF00C8A979 /* HeartStoneDecker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeartStoneDecker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		616F33DF205466FF00C8A979 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		616F33E1205466FF00C8A979 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -23,6 +42,11 @@
 		616F33E9205466FF00C8A979 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		616F33EB205466FF00C8A979 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		616F33EC205466FF00C8A979 /* HeartStoneDecker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HeartStoneDecker.entitlements; sourceTree = "<group>"; };
+		616F33F220548A6600C8A979 /* AppController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppController.swift; sourceTree = "<group>"; };
+		616F33F420548A7600C8A979 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		616F33F62054C08C00C8A979 /* CardsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsTableViewCell.swift; sourceTree = "<group>"; };
+		618808C92055F68100A926DD /* webDownloaderPage2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = webDownloaderPage2.swift; sourceTree = "<group>"; };
+		618808CB20560BB000A926DD /* DataBaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBaseManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,9 +60,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		61283655205746AE00EAB311 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				618808CB20560BB000A926DD /* DataBaseManager.swift */,
+				6112C79720560E9500F3BB93 /* DBCard+CoreDataClass.swift */,
+				6112C79820560E9500F3BB93 /* DBCard+CoreDataProperties.swift */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
+		61283656205746F400EAB311 /* Web */ = {
+			isa = PBXGroup;
+			children = (
+				616BA621205575EA00D1453E /* WebDownloader.swift */,
+				616BA6252055774900D1453E /* htmlWebPraser.swift */,
+				616BA6232055769800D1453E /* ImagesDownloader.swift */,
+				618808C92055F68100A926DD /* webDownloaderPage2.swift */,
+			);
+			path = Web;
+			sourceTree = "<group>";
+		};
 		616F33D3205466FF00C8A979 = {
 			isa = PBXGroup;
 			children = (
+				61283655205746AE00EAB311 /* CoreData */,
 				616F33DE205466FF00C8A979 /* HeartStoneDecker */,
 				616F33DD205466FF00C8A979 /* Products */,
 			);
@@ -56,9 +102,15 @@
 			isa = PBXGroup;
 			children = (
 				616F33DF205466FF00C8A979 /* AppDelegate.swift */,
+				616F33F220548A6600C8A979 /* AppController.swift */,
 				616F33E1205466FF00C8A979 /* ViewController.swift */,
+				61283656205746F400EAB311 /* Web */,
+				616F33F420548A7600C8A979 /* Extensions.swift */,
+				612836572057476300EAB311 /* Enums.swift */,
+				616BA62720557A5B00D1453E /* CardObjectMaker.swift */,
 				616F33E6205466FF00C8A979 /* Assets.xcassets */,
 				616F33E8205466FF00C8A979 /* Main.storyboard */,
+				616F33F62054C08C00C8A979 /* CardsTableViewCell.swift */,
 				616F33EB205466FF00C8A979 /* Info.plist */,
 				616F33EC205466FF00C8A979 /* HeartStoneDecker.entitlements */,
 				616F33E3205466FF00C8A979 /* HeartStoneDecker.xcdatamodeld */,
@@ -99,6 +151,11 @@
 					616F33DB205466FF00C8A979 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -137,9 +194,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6112C79D2056C73200F3BB93 /* DBCard+CoreDataClass.swift in Sources */,
+				6112C79E2056C73200F3BB93 /* DBCard+CoreDataProperties.swift in Sources */,
+				616F33F520548A7600C8A979 /* Extensions.swift in Sources */,
 				616F33E2205466FF00C8A979 /* ViewController.swift in Sources */,
 				616F33E0205466FF00C8A979 /* AppDelegate.swift in Sources */,
+				616BA62820557A5B00D1453E /* CardObjectMaker.swift in Sources */,
+				618808CC20560BB000A926DD /* DataBaseManager.swift in Sources */,
+				612836582057476300EAB311 /* Enums.swift in Sources */,
 				616F33E5205466FF00C8A979 /* HeartStoneDecker.xcdatamodeld in Sources */,
+				616F33F320548A6600C8A979 /* AppController.swift in Sources */,
+				618808CA2055F68100A926DD /* webDownloaderPage2.swift in Sources */,
+				616F33F72054C08C00C8A979 /* CardsTableViewCell.swift in Sources */,
+				616BA6262055774900D1453E /* htmlWebPraser.swift in Sources */,
+				616BA6242055769800D1453E /* ImagesDownloader.swift in Sources */,
+				616BA622205575EA00D1453E /* WebDownloader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,7 +336,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = HeartStoneDecker/HeartStoneDecker.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = TFF2HTL4NS;
@@ -283,7 +351,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = HeartStoneDecker/HeartStoneDecker.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = TFF2HTL4NS;
