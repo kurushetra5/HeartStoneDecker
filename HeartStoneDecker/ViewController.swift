@@ -57,7 +57,7 @@ class ViewController: NSViewController, CardsUpdaterDelegate  {
         if self.view.layer != nil {
             self.view.layer?.backgroundColor = .black
             backgroundView.wantsLayer = true
-            backgroundView.layer?.opacity = 0.1
+            backgroundView.layer?.opacity = 0.2
             
         }
     }
