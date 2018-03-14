@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		611D669E2059A1A400514813 /* DBCards+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611D669C2059A1A400514813 /* DBCards+CoreDataClass.swift */; };
 		611D669F2059A1A400514813 /* DBCards+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611D669D2059A1A400514813 /* DBCards+CoreDataProperties.swift */; };
+		611D66A12059E5D900514813 /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611D66A02059E5D900514813 /* Deck.swift */; };
+		611D66A32059E7C500514813 /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611D66A22059E7C500514813 /* Hero.swift */; };
 		612836582057476300EAB311 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612836572057476300EAB311 /* Enums.swift */; };
 		616BA622205575EA00D1453E /* WebDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616BA621205575EA00D1453E /* WebDownloader.swift */; };
 		616BA6242055769800D1453E /* ImagesDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616BA6232055769800D1453E /* ImagesDownloader.swift */; };
@@ -29,6 +31,8 @@
 /* Begin PBXFileReference section */
 		611D669C2059A1A400514813 /* DBCards+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DBCards+CoreDataClass.swift"; sourceTree = "<group>"; };
 		611D669D2059A1A400514813 /* DBCards+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DBCards+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		611D66A02059E5D900514813 /* Deck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
+		611D66A22059E7C500514813 /* Hero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hero.swift; sourceTree = "<group>"; };
 		612836572057476300EAB311 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		616BA621205575EA00D1453E /* WebDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebDownloader.swift; sourceTree = "<group>"; };
 		616BA6232055769800D1453E /* ImagesDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesDownloader.swift; sourceTree = "<group>"; };
@@ -114,6 +118,8 @@
 				616F33EB205466FF00C8A979 /* Info.plist */,
 				616F33EC205466FF00C8A979 /* HeartStoneDecker.entitlements */,
 				616F33E3205466FF00C8A979 /* HeartStoneDecker.xcdatamodeld */,
+				611D66A02059E5D900514813 /* Deck.swift */,
+				611D66A22059E7C500514813 /* Hero.swift */,
 			);
 			path = HeartStoneDecker;
 			sourceTree = "<group>";
@@ -194,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				611D66A32059E7C500514813 /* Hero.swift in Sources */,
 				616F33F520548A7600C8A979 /* Extensions.swift in Sources */,
 				616F33E2205466FF00C8A979 /* ViewController.swift in Sources */,
 				616F33E0205466FF00C8A979 /* AppDelegate.swift in Sources */,
@@ -206,6 +213,7 @@
 				616F33F72054C08C00C8A979 /* CardsTableViewCell.swift in Sources */,
 				616BA6262055774900D1453E /* htmlWebPraser.swift in Sources */,
 				616BA6242055769800D1453E /* ImagesDownloader.swift in Sources */,
+				611D66A12059E5D900514813 /* Deck.swift in Sources */,
 				611D669F2059A1A400514813 /* DBCards+CoreDataProperties.swift in Sources */,
 				616BA622205575EA00D1453E /* WebDownloader.swift in Sources */,
 				611D669E2059A1A400514813 /* DBCards+CoreDataClass.swift in Sources */,
