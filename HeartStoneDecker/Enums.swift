@@ -17,10 +17,10 @@ enum CheckType:Int {
 }
 
 enum CardTypes:Int {
-    case echizos,criaturas,armas
+    case echizos,criaturas,armas,heroe
 }
 
 enum HerosNames:Int {
-    case mago,guerrero,cazador,chaman,druida,brujo,picaro,sacerdote,paladin,neutral
+    case mago,guerrero,cazador,druida,picaro,brujo,sacerdote,paladin,chaman,neutral
 }
 

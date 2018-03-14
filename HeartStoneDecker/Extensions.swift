@@ -10,6 +10,27 @@ import Foundation
 import Cocoa
 
 
+extension NSButton {
+    
+    func switchOpacity() {
+        
+        if self.state.rawValue == 0 {
+            switchOpacityOff()
+        }else {
+            switchOpacityOn()
+        }
+    }
+    
+    func switchOpacityOff() {
+        self.layer?.opacity = 0.5
+    }
+    func switchOpacityOn() {
+        self.layer?.opacity = 1.0
+    }
+    
+}
+
+
 extension Data {
     var html2AttributedString: NSAttributedString? {
         do {

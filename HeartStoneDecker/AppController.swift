@@ -52,7 +52,12 @@ class AppController:WebDownloaderDelegate {
         cardsUpdaterDelegate?.cardsAreUpdated(newCards:cards)
     }
     
-    
+    public func fetchCards() {
+        cardsUpdaterDelegate?.cardsAreUpdated(newCards:dataBase.fetchCard())
+    }
+//    public func sortCardsBy(buttonTag:Int) {
+//        dataBase.sortCardsBy(buttonTag:buttonTag)
+//    }
     
     
     //MARK: ------------- WebDownloaderDelegate  -------------

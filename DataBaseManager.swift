@@ -15,17 +15,37 @@ class DataBaseManager {
     var applicationDelegate = NSApplication.shared.delegate  as? AppDelegate
     let managedContext:NSManagedObjectContext!
     
-    var selectedCosts:[String] = []
-    var selectedHeros:[String] = []
-    var selectedTypes:[String] = []
-    var selectedKeys:[String] = []
+    var selectedCosts:[String]!
+    var selectedHeros:[String]!
+    var selectedTypes:[String]!
+    var selectedKeys:[String]!
     
     
     init() {
         managedContext =  applicationDelegate?.persistentContainer.viewContext
-        
+      resetFilters()
     }
     
+    func resetFilters() {
+        selectedCosts  = ["0","1","2","3","4","5","6","7","8","9","10"]
+        selectedHeros  = ["Mago ","Guerrero ","Brujo ","Paladín ","Cazador ","Sacerdote ","Pícaro ","Chamán ","Druida ","Neutral "]
+        selectedTypes  = ["Hechizo ","Arma ","Criatura ","Heroe "]
+        selectedKeys   = ["type","theClass","cost"]
+    }
+    
+//    func sortCardsBy(buttonTag:Int) {
+//        
+//        switch  buttonTag {
+//        case 0:
+//            print("0")
+//        case 1:
+//            print("1")
+//        case 2:
+//            print("2")
+//        default:
+//            print("Error.. sortCardsBy(buttonTag:Int)")
+//        }
+//    }
     
     func newCard(fromDict: Dictionary<String, String>) {
         
@@ -48,7 +68,7 @@ class DataBaseManager {
     
     public func filterCards(filterType:CheckType, buttonState:Int, checkTag:Int) -> [DBCard] {
         
-        var predicate:NSPredicate!
+ 
         var value:String!
         
         
@@ -65,13 +85,25 @@ class DataBaseManager {
             if checkTag == CardTypes.criaturas.rawValue {
                 value = "Criatura "
             }
-            
+            if checkTag == CardTypes.heroe.rawValue {
+                value = "Heroe "
+            }
             if buttonState == 1 {
-               selectedKeys.append("type")
-               selectedTypes.append(value)
-            }else if buttonState == 0 {
-                selectedKeys.remove(at:selectedKeys.index(of:"type")!)
-                 selectedTypes.remove(at:selectedTypes.index(of:value)!)
+                if !selectedKeys.contains("type") {
+                    selectedKeys.append("type")
+                }
+                if !selectedTypes.contains(value) {
+                    selectedTypes.append(value)
+                }
+                
+            } else if buttonState == 0 {
+                
+                if selectedKeys.contains("type") {
+                   selectedKeys.remove(at:selectedKeys.index(of:"type")!)
+                }
+                if selectedTypes.contains(value) {
+                   selectedTypes.remove(at:selectedTypes.index(of:value)!)
+                }
             }
         
         case .hero:
@@ -82,31 +114,76 @@ class DataBaseManager {
             if checkTag == HerosNames.guerrero.rawValue {
                 value = "Guerrero "
             }
+            if checkTag == HerosNames.brujo.rawValue {
+                value = "Brujo "
+            }
+            if checkTag == HerosNames.paladin.rawValue {
+                value = "Paladín "
+            }
+            if checkTag == HerosNames.cazador.rawValue {
+                value = "Cazador "
+            }
+            if checkTag == HerosNames.sacerdote.rawValue {
+                value = "Sacerdote "
+            }
+            if checkTag == HerosNames.picaro.rawValue {
+                value = "Pícaro "
+            }
+            if checkTag == HerosNames.chaman.rawValue {
+                value = "Chamán "
+            }
+            if checkTag == HerosNames.druida.rawValue {
+                value = "Druida "
+            }
+            if checkTag == HerosNames.neutral.rawValue {
+                value = "Neutral "
+            }
             
             if buttonState == 1 {
-                selectedKeys.append("theClass")
-                selectedHeros.append(value)
                 
-            }else if buttonState == 0 {
-                selectedKeys.remove(at:selectedKeys.index(of:"theClass")!)
-                selectedHeros.remove(at:selectedHeros.index(of:value)!)
+                if !selectedKeys.contains("theClass") {
+                    selectedKeys.append("theClass")
+                }
+                if !selectedHeros.contains(value) {
+                    selectedHeros.append(value)
+                }
+            } else if buttonState == 0 {
+                
+                if selectedKeys.contains("theClass") {
+                    selectedKeys.remove(at:selectedKeys.index(of:"theClass")!)
+                }
+                if selectedHeros.contains(value) {
+                   selectedHeros.remove(at:selectedHeros.index(of:value)!)
+                }
+                
+                
+                
             }
            
         case .cost:
              value = "\(checkTag) "
             
             if buttonState == 1 {
-                selectedKeys.append("cost")
-                selectedCosts.append(value)
+                if !selectedKeys.contains("cost") {
+                    selectedKeys.append("cost")
+                }
+                if !selectedCosts.contains(value) {
+                    selectedCosts.append(value)
+                }
+                
             }else if buttonState == 0 {
-                 selectedKeys.remove(at:selectedKeys.index(of:"cost")!)
-                 selectedCosts.remove(at:selectedCosts.index(of:value)!)
+                
+                if selectedKeys.contains("cost") {
+                    selectedKeys.remove(at:selectedKeys.index(of:"cost")!)
+                }
+                if selectedCosts.contains(value) {
+                    selectedCosts.remove(at:selectedCosts.index(of:value)!)
+                }
             }
-            
         }
  
-        predicate = NSPredicate(format:"cost IN %@ AND theClass IN %@ AND type IN %@",selectedCosts,selectedHeros,selectedTypes)
-        return fetchCardBy(predicate:predicate)
+        
+        return fetchCard()
     }
     
     
@@ -142,9 +219,11 @@ class DataBaseManager {
     
     
     
-    private func fetchCardBy(predicate:NSPredicate) ->  [DBCard]! { //FIXME: Sobra ip
+      func fetchCard() ->  [DBCard]! {
         
         var foundedCards:[DBCard]!
+        var predicate:NSPredicate!
+        predicate = NSPredicate(format:"cost IN %@ AND theClass IN %@ AND type IN %@",selectedCosts,selectedHeros,selectedTypes)
         
         let fetchRequest: NSFetchRequest<DBCard> = DBCard.fetchRequest()
         fetchRequest.predicate = predicate
