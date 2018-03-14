@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6112C79D2056C73200F3BB93 /* DBCard+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6112C79720560E9500F3BB93 /* DBCard+CoreDataClass.swift */; };
-		6112C79E2056C73200F3BB93 /* DBCard+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6112C79820560E9500F3BB93 /* DBCard+CoreDataProperties.swift */; };
+		611D669E2059A1A400514813 /* DBCards+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611D669C2059A1A400514813 /* DBCards+CoreDataClass.swift */; };
+		611D669F2059A1A400514813 /* DBCards+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611D669D2059A1A400514813 /* DBCards+CoreDataProperties.swift */; };
 		612836582057476300EAB311 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612836572057476300EAB311 /* Enums.swift */; };
 		616BA622205575EA00D1453E /* WebDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616BA621205575EA00D1453E /* WebDownloader.swift */; };
 		616BA6242055769800D1453E /* ImagesDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616BA6232055769800D1453E /* ImagesDownloader.swift */; };
@@ -27,8 +27,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6112C79720560E9500F3BB93 /* DBCard+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DBCard+CoreDataClass.swift"; sourceTree = "<group>"; };
-		6112C79820560E9500F3BB93 /* DBCard+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DBCard+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		611D669C2059A1A400514813 /* DBCards+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DBCards+CoreDataClass.swift"; sourceTree = "<group>"; };
+		611D669D2059A1A400514813 /* DBCards+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DBCards+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		612836572057476300EAB311 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		616BA621205575EA00D1453E /* WebDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebDownloader.swift; sourceTree = "<group>"; };
 		616BA6232055769800D1453E /* ImagesDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesDownloader.swift; sourceTree = "<group>"; };
@@ -64,8 +64,8 @@
 			isa = PBXGroup;
 			children = (
 				618808CB20560BB000A926DD /* DataBaseManager.swift */,
-				6112C79720560E9500F3BB93 /* DBCard+CoreDataClass.swift */,
-				6112C79820560E9500F3BB93 /* DBCard+CoreDataProperties.swift */,
+				611D669C2059A1A400514813 /* DBCards+CoreDataClass.swift */,
+				611D669D2059A1A400514813 /* DBCards+CoreDataProperties.swift */,
 			);
 			name = CoreData;
 			sourceTree = "<group>";
@@ -84,6 +84,7 @@
 		616F33D3205466FF00C8A979 = {
 			isa = PBXGroup;
 			children = (
+				616F33DF205466FF00C8A979 /* AppDelegate.swift */,
 				61283655205746AE00EAB311 /* CoreData */,
 				616F33DE205466FF00C8A979 /* HeartStoneDecker */,
 				616F33DD205466FF00C8A979 /* Products */,
@@ -101,7 +102,6 @@
 		616F33DE205466FF00C8A979 /* HeartStoneDecker */ = {
 			isa = PBXGroup;
 			children = (
-				616F33DF205466FF00C8A979 /* AppDelegate.swift */,
 				616F33F220548A6600C8A979 /* AppController.swift */,
 				616F33E1205466FF00C8A979 /* ViewController.swift */,
 				61283656205746F400EAB311 /* Web */,
@@ -194,8 +194,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6112C79D2056C73200F3BB93 /* DBCard+CoreDataClass.swift in Sources */,
-				6112C79E2056C73200F3BB93 /* DBCard+CoreDataProperties.swift in Sources */,
 				616F33F520548A7600C8A979 /* Extensions.swift in Sources */,
 				616F33E2205466FF00C8A979 /* ViewController.swift in Sources */,
 				616F33E0205466FF00C8A979 /* AppDelegate.swift in Sources */,
@@ -208,7 +206,9 @@
 				616F33F72054C08C00C8A979 /* CardsTableViewCell.swift in Sources */,
 				616BA6262055774900D1453E /* htmlWebPraser.swift in Sources */,
 				616BA6242055769800D1453E /* ImagesDownloader.swift in Sources */,
+				611D669F2059A1A400514813 /* DBCards+CoreDataProperties.swift in Sources */,
 				616BA622205575EA00D1453E /* WebDownloader.swift in Sources */,
+				611D669E2059A1A400514813 /* DBCards+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

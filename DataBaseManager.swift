@@ -49,11 +49,11 @@ class DataBaseManager {
     
     func newCard(fromDict: Dictionary<String, String>) {
         
-        let newCard = newDBCard()
+        let newCard = newDBCards()
         newCard.name = fromDict["Name"]
-        newCard.atack = fromDict["Attack"]
-        newCard.cost = fromDict["Cost"]
-        newCard.health = fromDict["Health"]
+        newCard.atack = Int32(Int(fromDict["Attack"]!)!)
+        newCard.cost = Int32(Int(fromDict["Cost"]!)!)
+        newCard.health = Int32(Int(fromDict["Health"]!)!)
         newCard.theClass = fromDict["Class"]
         newCard.type = fromDict["Type"]
         newCard.imageLink = "NO"
@@ -66,7 +66,7 @@ class DataBaseManager {
     
     
     
-    public func filterCards(filterType:CheckType, buttonState:Int, checkTag:Int) -> [DBCard] {
+    public func filterCards(filterType:CheckType, buttonState:Int, checkTag:Int) -> [DBCards] {
         
  
         var value:String!
@@ -161,7 +161,7 @@ class DataBaseManager {
             }
            
         case .cost:
-             value = "\(checkTag) "
+             value = "\(checkTag)"
             
             if buttonState == 1 {
                 if !selectedKeys.contains("cost") {
@@ -191,7 +191,7 @@ class DataBaseManager {
     
     public  func cleanDataBase() {
         
-        let fetch = NSFetchRequest<NSFetchRequestResult>(entityName:"DBCard")
+        let fetch = NSFetchRequest<NSFetchRequestResult>(entityName:"DBCards")
         let request = NSBatchDeleteRequest(fetchRequest: fetch)
         do {
             try managedContext.execute(request)
@@ -219,13 +219,13 @@ class DataBaseManager {
     
     
     
-      func fetchCard() ->  [DBCard]! {
+      func fetchCard() ->  [DBCards]! {
         
-        var foundedCards:[DBCard]!
+        var foundedCards:[DBCards]!
         var predicate:NSPredicate!
         predicate = NSPredicate(format:"cost IN %@ AND theClass IN %@ AND type IN %@",selectedCosts,selectedHeros,selectedTypes)
         
-        let fetchRequest: NSFetchRequest<DBCard> = DBCard.fetchRequest()
+        let fetchRequest: NSFetchRequest<DBCards> = DBCards.fetchRequest()
         fetchRequest.predicate = predicate
         
         do {
@@ -246,17 +246,17 @@ class DataBaseManager {
     
     
     
-    public func cardsDataBase() -> [DBCard] {
+    public func cardsDataBase() -> [DBCards] {
         
-        var cards:[DBCard] = []
+        var cards:[DBCards] = []
         
-        let fetchRequest: NSFetchRequest<DBCard> = DBCard.fetchRequest()
+        let fetchRequest: NSFetchRequest<DBCards> = DBCards.fetchRequest()
         
         do {
             let searchResults = try managedContext.fetch(fetchRequest)
             //            print ("num of results = \(searchResults.count)")
             
-            for card in searchResults as [DBCard] {
+            for card in searchResults as [DBCards] {
                 cards.append(card)
                 //                print("\(String(describing: ip.value(forKey: "number")))")
             }
@@ -272,10 +272,10 @@ class DataBaseManager {
     
     
     
-    func  newDBCard() -> DBCard {
-        let entity = NSEntityDescription.entity(forEntityName: "DBCard", in: self.managedContext)!
-        let newDBCard = NSManagedObject(entity: entity,insertInto: self.managedContext) as! DBCard
-        return newDBCard
+    func  newDBCards() -> DBCards {
+        let entity = NSEntityDescription.entity(forEntityName: "DBCards", in: self.managedContext)!
+        let newDBCards = NSManagedObject(entity: entity,insertInto: self.managedContext) as! DBCards
+        return newDBCards
     }
     
 }

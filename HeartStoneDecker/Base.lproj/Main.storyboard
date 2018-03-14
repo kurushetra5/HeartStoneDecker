@@ -721,7 +721,7 @@
                             <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="N1T-l6-ps3">
                                 <rect key="frame" x="869" y="1290" width="146" height="136"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Mago" imagePosition="overlaps" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="Ez3-HH-cNa">
+                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Mago" imagePosition="overlaps" alignment="center" state="on" imageScaling="proportionallyUpOrDown" inset="2" id="Ez3-HH-cNa">
                                     <behavior key="behavior" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
@@ -732,7 +732,7 @@
                             <button fixedFrame="YES" tag="1" translatesAutoresizingMaskIntoConstraints="NO" id="crZ-W1-inx">
                                 <rect key="frame" x="1034" y="1290" width="146" height="136"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Guerrero copy" imagePosition="overlaps" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="Cne-Sr-NqL">
+                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Guerrero copy" imagePosition="overlaps" alignment="center" state="on" imageScaling="proportionallyUpOrDown" inset="2" id="Cne-Sr-NqL">
                                     <behavior key="behavior" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
@@ -825,7 +825,7 @@
                             <button fixedFrame="YES" tag="3" translatesAutoresizingMaskIntoConstraints="NO" id="Up6-5K-0ob">
                                 <rect key="frame" x="1362" y="1290" width="146" height="136"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Druida" imagePosition="overlaps" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="Gze-xx-szE">
+                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Druida" imagePosition="overlaps" alignment="center" state="on" imageScaling="proportionallyUpOrDown" inset="2" id="Gze-xx-szE">
                                     <behavior key="behavior" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
@@ -836,7 +836,7 @@
                             <button fixedFrame="YES" tag="4" translatesAutoresizingMaskIntoConstraints="NO" id="c0B-bM-hab">
                                 <rect key="frame" x="1527" y="1290" width="151" height="136"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Picara" imagePosition="overlaps" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="4Bo-oW-Xpm">
+                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Picara" imagePosition="overlaps" alignment="center" state="on" imageScaling="proportionallyUpOrDown" inset="2" id="4Bo-oW-Xpm">
                                     <behavior key="behavior" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
@@ -865,7 +865,7 @@
                             <button fixedFrame="YES" tag="5" translatesAutoresizingMaskIntoConstraints="NO" id="nUq-RC-oWu">
                                 <rect key="frame" x="1688" y="1290" width="151" height="136"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Brujo copy" imagePosition="overlaps" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="pdf-2V-QvK">
+                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Brujo copy" imagePosition="overlaps" alignment="center" state="on" imageScaling="proportionallyUpOrDown" inset="2" id="pdf-2V-QvK">
                                     <behavior key="behavior" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
@@ -885,7 +885,7 @@
                             <button fixedFrame="YES" tag="6" translatesAutoresizingMaskIntoConstraints="NO" id="h02-Ec-EcC">
                                 <rect key="frame" x="1856" y="1290" width="146" height="136"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Sacerdote" imagePosition="overlaps" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="XHH-x5-jY0">
+                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Sacerdote" imagePosition="overlaps" alignment="center" state="on" imageScaling="proportionallyUpOrDown" inset="2" id="XHH-x5-jY0">
                                     <behavior key="behavior" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
@@ -896,7 +896,7 @@
                             <button fixedFrame="YES" tag="7" translatesAutoresizingMaskIntoConstraints="NO" id="dEE-M5-5A8">
                                 <rect key="frame" x="2021" y="1290" width="146" height="136"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Paladin" imagePosition="overlaps" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="AaX-1e-VH5">
+                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Paladin" imagePosition="overlaps" alignment="center" state="on" imageScaling="proportionallyUpOrDown" inset="2" id="AaX-1e-VH5">
                                     <behavior key="behavior" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
@@ -925,7 +925,7 @@
                             <button fixedFrame="YES" tag="8" translatesAutoresizingMaskIntoConstraints="NO" id="beF-oc-Tsg">
                                 <rect key="frame" x="2182" y="1290" width="146" height="136"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Chaman copy" imagePosition="overlaps" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="VDt-Xn-f2O">
+                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Chaman copy" imagePosition="overlaps" alignment="center" state="on" imageScaling="proportionallyUpOrDown" inset="2" id="VDt-Xn-f2O">
                                     <behavior key="behavior" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
@@ -943,10 +943,10 @@
                                 </textFieldCell>
                             </textField>
                             <button fixedFrame="YES" tag="1" translatesAutoresizingMaskIntoConstraints="NO" id="EGK-3M-8dJ">
-                                <rect key="frame" x="662" y="1394" width="181" height="40"/>
+                                <rect key="frame" x="701" y="1393" width="153" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="square" title="TODAS LAS CARTAS" bezelStyle="shadowlessSquare" imagePosition="overlaps" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyUpOrDown" inset="2" id="gJk-yQ-bks">
-                                    <behavior key="behavior" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
+                                <buttonCell key="cell" type="bevel" title="TODAS LAS CARTAS" bezelStyle="regularSquare" imagePosition="overlaps" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyUpOrDown" inset="2" id="gJk-yQ-bks">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <connections>
@@ -986,15 +986,15 @@
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             <subviews>
                                                                 <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3iA-yT-tg9">
-                                                                    <rect key="frame" x="3" y="3" width="260" height="337"/>
+                                                                    <rect key="frame" x="3" y="3" width="236" height="337"/>
                                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES"/>
                                                                     <imageCell key="cell" enabled="NO" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="imagen" id="0Jg-dw-H2I"/>
                                                                 </imageView>
                                                                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2xF-7B-vyB">
-                                                                    <rect key="frame" x="271" y="287" width="573" height="53"/>
+                                                                    <rect key="frame" x="238" y="287" width="606" height="53"/>
                                                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" heightSizable="YES"/>
-                                                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="center" title="Alexstrasza" drawsBackground="YES" id="rmv-It-KkC">
-                                                                        <font key="font" size="38" name="HiraMinProN-W6"/>
+                                                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" borderStyle="border" alignment="center" title="Alexstrasza" drawsBackground="YES" id="rmv-It-KkC">
+                                                                        <font key="font" size="35" name="HiraMinProN-W6"/>
                                                                         <color key="textColor" red="0.45085787770000002" green="0.98829740290000001" blue="0.83763033149999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     </textFieldCell>
@@ -1030,7 +1030,7 @@
                                                                     <rect key="frame" x="269" y="247" width="575" height="35"/>
                                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Echizo" id="LEC-ic-ExD">
-                                                                        <font key="font" size="27" name="HiraMaruProN-W4"/>
+                                                                        <font key="font" size="25" name="HiraMaruProN-W4"/>
                                                                         <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                                     </textFieldCell>
@@ -1118,7 +1118,7 @@
                             <button fixedFrame="YES" tag="9" translatesAutoresizingMaskIntoConstraints="NO" id="1c2-5R-LNg">
                                 <rect key="frame" x="2356" y="1290" width="146" height="136"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Mago" imagePosition="overlaps" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="AhX-zq-EWO">
+                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Mago" imagePosition="overlaps" alignment="center" state="on" imageScaling="proportionallyUpOrDown" inset="2" id="AhX-zq-EWO">
                                     <behavior key="behavior" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
@@ -1136,20 +1136,20 @@
                                 </textFieldCell>
                             </textField>
                             <button fixedFrame="YES" tag="3" translatesAutoresizingMaskIntoConstraints="NO" id="F2M-d8-n7N">
-                                <rect key="frame" x="446" y="1398" width="82" height="28"/>
+                                <rect key="frame" x="429" y="1397" width="64" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="square" title="Nombre" bezelStyle="shadowlessSquare" imagePosition="overlaps" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyUpOrDown" inset="2" id="via-2I-qre">
-                                    <behavior key="behavior" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
+                                <buttonCell key="cell" type="bevel" title="ABC" bezelStyle="regularSquare" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyUpOrDown" inset="2" id="via-2I-qre">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <connections>
-                                    <action selector="sortCardsBy:" target="XfG-lQ-9wD" id="Djp-ZK-8kJ"/>
+                                    <action selector="sortCardsBy:" target="XfG-lQ-9wD" id="Qs7-Ou-Sc5"/>
                                 </connections>
                             </button>
                             <button fixedFrame="YES" tag="2" translatesAutoresizingMaskIntoConstraints="NO" id="JMg-Rs-Fto">
                                 <rect key="frame" x="1195" y="1290" width="146" height="136"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Cazador" imagePosition="overlaps" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="SC6-n1-633">
+                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Cazador" imagePosition="overlaps" alignment="center" state="on" imageScaling="proportionallyUpOrDown" inset="2" id="SC6-n1-633">
                                     <behavior key="behavior" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
@@ -1278,16 +1278,35 @@
                                     <action selector="costCheck:" target="XfG-lQ-9wD" id="Ln1-k4-fsc"/>
                                 </connections>
                             </button>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YoQ-3D-rKs">
+                                <rect key="frame" x="563" y="1388" width="140" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="1200" id="4wf-xK-tAf">
+                                    <font key="font" size="21" name="HiraMinProN-W6"/>
+                                    <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nf2-ae-jed">
+                                <rect key="frame" x="563" y="1414" width="140" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Cartas" id="Jtr-N8-R3s">
+                                    <font key="font" size="21" name="HiraMinProN-W6"/>
+                                    <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
                         </subviews>
                     </view>
                     <connections>
                         <outlet property="backgroundView" destination="dJy-sc-drs" id="Qd7-tF-THu"/>
+                        <outlet property="showedCardsNumber" destination="YoQ-3D-rKs" id="6wt-yY-Z04"/>
                         <outlet property="tableViewCards" destination="aLE-Uy-4eQ" id="cec-Be-NMm"/>
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1703" y="-2139"/>
+            <point key="canvasLocation" x="1779" y="-2151"/>
         </scene>
     </scenes>
     <resources>

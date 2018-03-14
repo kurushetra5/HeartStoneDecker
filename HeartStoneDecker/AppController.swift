@@ -10,7 +10,7 @@ import Foundation
 import Cocoa
 
 protocol CardsUpdaterDelegate {
-    func cardsAreUpdated(newCards:[DBCard])
+    func cardsAreUpdated(newCards:[DBCards])
 }
 
 
@@ -28,13 +28,14 @@ class AppController:WebDownloaderDelegate {
     
     private init() {
         webDownloader.webDownloaderDelegate = self
+//        dataBase.cleanDataBase()
     }
     
     
     //MARK: ------------- Public Funcs   -------------
     /// downloads
     public func downloadWebs() {
-        //        webDownloader.startDownloadCards()
+//                webDownloader.startDownloadCards()
         //        webDownloader2.startDownloadCards()
     }
     
@@ -43,12 +44,12 @@ class AppController:WebDownloaderDelegate {
     }
     
     /// database
-    public func cardsFromDataBase() -> [DBCard] {
+    public func cardsFromDataBase() -> [DBCards] {
         return dataBase.cardsDataBase()
     }
     
     public func filterCards(filterType:CheckType, buttonState:Int, checkTag:Int) {
-        let cards:[DBCard] = dataBase.filterCards(filterType:filterType, buttonState:buttonState, checkTag:checkTag)
+        let cards:[DBCards] = dataBase.filterCards(filterType:filterType, buttonState:buttonState, checkTag:checkTag)
         cardsUpdaterDelegate?.cardsAreUpdated(newCards:cards)
     }
     

@@ -1,5 +1,5 @@
 //
-//  DBCard+CoreDataClass.swift
+//  DBCards+CoreDataClass.swift
 //  HeartStoneDecker
 //
 //  Created by Kurushetra on 14/3/18.
@@ -10,7 +10,7 @@
 import Foundation
 import CoreData
 
-@objc(DBCard1)
-public class DBCard1: NSManagedObject {
+@objc(DBCards)
+public class DBCards: NSManagedObject {
 
 }

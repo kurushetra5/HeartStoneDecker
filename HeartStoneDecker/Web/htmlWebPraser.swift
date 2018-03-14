@@ -89,11 +89,16 @@ class htmlWebPraser  {
             cartHealth = lines[9+sumName+5]
             cartTilte = "Card_" + cartName
             
+            let attackClean:String = String(cartAttack.dropLast())
+//            let healthClean:String = String(cartHealth.dropLast())
+            let cartCostClean:String = String(cartCost.dropLast())
+            
+            
             singleCard["Name"] = cartName
             singleCard["Type"] = cartType
             singleCard["Class"] = cartClass
-            singleCard["Cost"] = cartCost
-            singleCard["Attack"] = cartAttack
+            singleCard["Cost"] = cartCostClean
+            singleCard["Attack"] = attackClean
             singleCard["Health"] = cartHealth
             arrayCards[cartTilte] = singleCard
             

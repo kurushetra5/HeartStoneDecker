@@ -1,5 +1,5 @@
 //
-//  DBCard+CoreDataProperties.swift
+//  DBCards+CoreDataProperties.swift
 //  HeartStoneDecker
 //
 //  Created by Kurushetra on 14/3/18.
@@ -11,10 +11,10 @@ import Foundation
 import CoreData
 
 
-extension DBCard1 {
+extension DBCards {
 
-    @nonobjc public class func fetchRequest() -> NSFetchRequest<DBCard1> {
-        return NSFetchRequest<DBCard1>(entityName: "DBCard1")
+    @nonobjc public class func fetchRequest() -> NSFetchRequest<DBCards> {
+        return NSFetchRequest<DBCards>(entityName: "DBCards")
     }
 
     @NSManaged public var atack: Int32
