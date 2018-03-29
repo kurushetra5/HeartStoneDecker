@@ -108,34 +108,34 @@ class DataBaseManager {
         
         case .hero:
             
-            if checkTag == HerosNames.mago.rawValue {
+            if checkTag ==  HeroTypes.mago.rawValue {
                 value = "Mago "
             }
-            if checkTag == HerosNames.guerrero.rawValue {
+            if checkTag ==  HeroTypes.guerrero.rawValue {
                 value = "Guerrero "
             }
-            if checkTag == HerosNames.brujo.rawValue {
+            if checkTag ==  HeroTypes.brujo.rawValue {
                 value = "Brujo "
             }
-            if checkTag == HerosNames.paladin.rawValue {
+            if checkTag ==  HeroTypes.paladin.rawValue {
                 value = "Paladín "
             }
-            if checkTag == HerosNames.cazador.rawValue {
+            if checkTag ==  HeroTypes.cazador.rawValue {
                 value = "Cazador "
             }
-            if checkTag == HerosNames.sacerdote.rawValue {
+            if checkTag ==  HeroTypes.sacerdote.rawValue {
                 value = "Sacerdote "
             }
-            if checkTag == HerosNames.picaro.rawValue {
+            if checkTag ==  HeroTypes.picaro.rawValue {
                 value = "Pícaro "
             }
-            if checkTag == HerosNames.chaman.rawValue {
+            if checkTag ==  HeroTypes.chaman.rawValue {
                 value = "Chamán "
             }
-            if checkTag == HerosNames.druida.rawValue {
+            if checkTag ==  HeroTypes.druida.rawValue {
                 value = "Druida "
             }
-            if checkTag == HerosNames.neutral.rawValue {
+            if checkTag ==  HeroTypes.neutral.rawValue {
                 value = "Neutral "
             }
             

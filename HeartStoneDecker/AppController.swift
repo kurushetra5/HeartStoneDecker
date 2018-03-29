@@ -13,6 +13,10 @@ protocol CardsUpdaterDelegate {
     func cardsAreUpdated(newCards:[DBCards])
 }
 
+protocol SetDelegateForNewDeckController {
+    func setDelegateForNewDeckVC() -> NewDeckVCDataDelegate
+}
+
 
 
 class AppController:WebDownloaderDelegate {
@@ -23,19 +27,35 @@ class AppController:WebDownloaderDelegate {
     var webDownloader2  = webDownloaderPage2()
     var imagesDownloader  = ImagesDownloader()
     var dataBase  = DataBaseManager()
+    var herosManager:HerosManager = HerosManager()
+    
+    
+    
     var cardsUpdaterDelegate:CardsUpdaterDelegate!
+    var delegateForNewDeckController:SetDelegateForNewDeckController!
     
     
     private init() {
         webDownloader.webDownloaderDelegate = self
-//        dataBase.cleanDataBase()
+        
+//        var cardChosser:CardsChosser =  CardsChosser()
+//        let bestCostAttack:[DBCards] = cardChosser.chosseCards(amount:2, cards:dataBase.cardsDataBase(), quality:.costAttack)
+//        let bestCostHealth:[DBCards] = cardChosser.chosseCards(amount:2, cards:dataBase.cardsDataBase(), quality:.costHealth)
+//        let bestAttackHealth:[DBCards] = cardChosser.chosseCards(amount:2, cards:dataBase.cardsDataBase(), quality:.attackHealth)
+//        
+//         print("bestCostAttack--------------------")
+//        print(bestCostAttack)
+//         print("bestCostHealth--------------------")
+//        print(bestCostHealth)
+//        print("bestAttackHealth--------------------")
+//        print(bestAttackHealth)
     }
     
     
     //MARK: ------------- Public Funcs   -------------
     /// downloads
     public func downloadWebs() {
-//                webDownloader.startDownloadCards()
+                 webDownloader.startDownloadCards()
         //        webDownloader2.startDownloadCards()
     }
     
@@ -56,10 +76,17 @@ class AppController:WebDownloaderDelegate {
     public func fetchCards() {
         cardsUpdaterDelegate?.cardsAreUpdated(newCards:dataBase.fetchCard())
     }
-//    public func sortCardsBy(buttonTag:Int) {
-//        dataBase.sortCardsBy(buttonTag:buttonTag)
-//    }
     
+    
+    ///decks
+    public func newDeck(forHero:HeroTypes) {
+         herosManager.newDeck(forHero:forHero)
+    }
+    
+    func getDelegateForNewDeckVC() -> NewDeckVCDataDelegate {
+        return delegateForNewDeckController?.setDelegateForNewDeckVC as! NewDeckVCDataDelegate
+        
+    }
     
     //MARK: ------------- WebDownloaderDelegate  -------------
     func newDownloaded(card: Dictionary<String, String>) {

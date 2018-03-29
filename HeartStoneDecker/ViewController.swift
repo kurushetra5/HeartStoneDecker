@@ -11,6 +11,8 @@ import Cocoa
 
 class ViewController: NSViewController, CardsUpdaterDelegate  {
     
+    
+    
     //    MARK: ------------- Buttons  -------------
     //    @IBOutlet weak var cost1: NSButton!
     //    @IBOutlet weak var cost2: NSButton!
@@ -29,6 +31,10 @@ class ViewController: NSViewController, CardsUpdaterDelegate  {
     @IBOutlet weak var backgroundView: NSImageView!
     @IBOutlet weak var tableViewCards: NSTableView!
     @IBOutlet weak var showedCardsNumber: NSTextField!
+    //MARK: ------------- OUTLETS TABVIEW -------------
+    @IBOutlet weak var tabViewHeroName: NSTextField!
+    @IBOutlet weak var tabViewCardsInDeck: NSTextField!
+    
     
     
     
@@ -101,16 +107,21 @@ class ViewController: NSViewController, CardsUpdaterDelegate  {
     override func viewDidLoad() {
         super.viewDidLoad()
         viewConfiguration()
+        
+//        var hero:Hero = Hero(withType:.brujo)
+//        print(hero.heroName)
     }
     
     
     override func viewDidAppear() {
         super.viewDidAppear()
         appController.cardsUpdaterDelegate = self
-        //         appController.downloadWebs()
+//                appController.downloadWebs()
         //        appController.fetchCards()
         //        tableViewCards.reloadData()
     }
+    
+    
     
     //MARK: ------------- VIEW CONFIG  -------------
     func viewConfiguration() {
@@ -130,6 +141,11 @@ class ViewController: NSViewController, CardsUpdaterDelegate  {
     }
     
 }
+
+
+
+
+
 
 
 
@@ -166,6 +182,26 @@ extension ViewController: NSTableViewDelegate,NSTableViewDataSource {
     }
     
 }
+
+
+
+
+//MARK: ------------- EXTENSION TabView -------------
+
+extension ViewController: NSTabViewDelegate ,NewDeckVCDataDelegate {
+    
+    func hero(name: String) {
+        tabViewHeroName.stringValue = name
+    }
+    
+    func deck(cards: Int) {
+        tabViewCardsInDeck.integerValue = cards
+    }
+    
+   
+
+}
+
 
 
 

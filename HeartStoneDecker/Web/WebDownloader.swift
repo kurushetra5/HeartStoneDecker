@@ -67,6 +67,9 @@ class WebDownloader {
         do {
             let htmlSource = try String.init(contentsOf:webURL!,encoding:String.Encoding.utf8)
             completion(htmlSource.html2String)
+            
+            print(htmlSource.html2String)
+            
         }
         catch let error as NSError {
             print("Mierda! Algo ha fallado: \(error)")

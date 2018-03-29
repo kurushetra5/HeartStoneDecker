@@ -12,6 +12,9 @@
 		611D66A12059E5D900514813 /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611D66A02059E5D900514813 /* Deck.swift */; };
 		611D66A32059E7C500514813 /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611D66A22059E7C500514813 /* Hero.swift */; };
 		612836582057476300EAB311 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612836572057476300EAB311 /* Enums.swift */; };
+		614C96E9205AC01A00EB212C /* NewDeckVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614C96E8205AC01A00EB212C /* NewDeckVC.swift */; };
+		614C96EB205AC31F00EB212C /* HerosManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614C96EA205AC31F00EB212C /* HerosManager.swift */; };
+		614C96ED205AC34600EB212C /* DecksManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614C96EC205AC34600EB212C /* DecksManager.swift */; };
 		616BA622205575EA00D1453E /* WebDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616BA621205575EA00D1453E /* WebDownloader.swift */; };
 		616BA6242055769800D1453E /* ImagesDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616BA6232055769800D1453E /* ImagesDownloader.swift */; };
 		616BA6262055774900D1453E /* htmlWebPraser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616BA6252055774900D1453E /* htmlWebPraser.swift */; };
@@ -26,6 +29,7 @@
 		616F33F72054C08C00C8A979 /* CardsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616F33F62054C08C00C8A979 /* CardsTableViewCell.swift */; };
 		618808CA2055F68100A926DD /* webDownloaderPage2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618808C92055F68100A926DD /* webDownloaderPage2.swift */; };
 		618808CC20560BB000A926DD /* DataBaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618808CB20560BB000A926DD /* DataBaseManager.swift */; };
+		619CBCDF205A013E00F0EB65 /* CardsChosser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619CBCDE205A013E00F0EB65 /* CardsChosser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +38,9 @@
 		611D66A02059E5D900514813 /* Deck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
 		611D66A22059E7C500514813 /* Hero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hero.swift; sourceTree = "<group>"; };
 		612836572057476300EAB311 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		614C96E8205AC01A00EB212C /* NewDeckVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewDeckVC.swift; sourceTree = "<group>"; };
+		614C96EA205AC31F00EB212C /* HerosManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HerosManager.swift; sourceTree = "<group>"; };
+		614C96EC205AC34600EB212C /* DecksManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecksManager.swift; sourceTree = "<group>"; };
 		616BA621205575EA00D1453E /* WebDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebDownloader.swift; sourceTree = "<group>"; };
 		616BA6232055769800D1453E /* ImagesDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesDownloader.swift; sourceTree = "<group>"; };
 		616BA6252055774900D1453E /* htmlWebPraser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = htmlWebPraser.swift; sourceTree = "<group>"; };
@@ -51,6 +58,7 @@
 		616F33F62054C08C00C8A979 /* CardsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsTableViewCell.swift; sourceTree = "<group>"; };
 		618808C92055F68100A926DD /* webDownloaderPage2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = webDownloaderPage2.swift; sourceTree = "<group>"; };
 		618808CB20560BB000A926DD /* DataBaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBaseManager.swift; sourceTree = "<group>"; };
+		619CBCDE205A013E00F0EB65 /* CardsChosser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsChosser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +116,7 @@
 			children = (
 				616F33F220548A6600C8A979 /* AppController.swift */,
 				616F33E1205466FF00C8A979 /* ViewController.swift */,
+				614C96E8205AC01A00EB212C /* NewDeckVC.swift */,
 				61283656205746F400EAB311 /* Web */,
 				616F33F420548A7600C8A979 /* Extensions.swift */,
 				612836572057476300EAB311 /* Enums.swift */,
@@ -120,6 +129,9 @@
 				616F33E3205466FF00C8A979 /* HeartStoneDecker.xcdatamodeld */,
 				611D66A02059E5D900514813 /* Deck.swift */,
 				611D66A22059E7C500514813 /* Hero.swift */,
+				619CBCDE205A013E00F0EB65 /* CardsChosser.swift */,
+				614C96EA205AC31F00EB212C /* HerosManager.swift */,
+				614C96EC205AC34600EB212C /* DecksManager.swift */,
 			);
 			path = HeartStoneDecker;
 			sourceTree = "<group>";
@@ -205,16 +217,20 @@
 				616F33E2205466FF00C8A979 /* ViewController.swift in Sources */,
 				616F33E0205466FF00C8A979 /* AppDelegate.swift in Sources */,
 				616BA62820557A5B00D1453E /* CardObjectMaker.swift in Sources */,
+				614C96ED205AC34600EB212C /* DecksManager.swift in Sources */,
 				618808CC20560BB000A926DD /* DataBaseManager.swift in Sources */,
 				612836582057476300EAB311 /* Enums.swift in Sources */,
 				616F33E5205466FF00C8A979 /* HeartStoneDecker.xcdatamodeld in Sources */,
 				616F33F320548A6600C8A979 /* AppController.swift in Sources */,
+				614C96EB205AC31F00EB212C /* HerosManager.swift in Sources */,
 				618808CA2055F68100A926DD /* webDownloaderPage2.swift in Sources */,
 				616F33F72054C08C00C8A979 /* CardsTableViewCell.swift in Sources */,
 				616BA6262055774900D1453E /* htmlWebPraser.swift in Sources */,
+				614C96E9205AC01A00EB212C /* NewDeckVC.swift in Sources */,
 				616BA6242055769800D1453E /* ImagesDownloader.swift in Sources */,
 				611D66A12059E5D900514813 /* Deck.swift in Sources */,
 				611D669F2059A1A400514813 /* DBCards+CoreDataProperties.swift in Sources */,
+				619CBCDF205A013E00F0EB65 /* CardsChosser.swift in Sources */,
 				616BA622205575EA00D1453E /* WebDownloader.swift in Sources */,
 				611D669E2059A1A400514813 /* DBCards+CoreDataClass.swift in Sources */,
 			);
